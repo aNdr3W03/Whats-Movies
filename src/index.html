@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <title>What's Movie</title>
+</head>
+
+<body>
+  <header class="sticky-top">
+    <nav-bar></nav-bar>
+  </header>
+  
+  <main>
+    <carousel-label></carousel-label>
+    <search-bar></search-bar>
+    
+    <div class="container">
+      <div class="search-list"></div>
+      
+      <div class="row movie-list">
+        <div class="merge">
+          <span class="movie-container" id="nowPlaying"></span>
+          <h2 class="mt-5 font-weight-bold text-light">Now Playing</h2><hr>
+          <div class="row playing-list"></div>
+
+          <span class="movie-container" id="upcoming"></span>
+          <h2 class="mt-5 font-weight-bold text-light">Upcoming</h2><hr>
+          <div class="row upcoming-list"></div>
+
+          <span class="movie-container" id="popular"></span>
+          <h2 class="mt-5 font-weight-bold text-light">Popular Movies</h2><hr>
+          <div class="row popular-list"></div>
+
+          <span class="movie-container" id="topRated"></span>
+          <h2 class="mt-5 font-weight-bold text-light">Top Rated Movies</h2><hr>
+          <div class="row top-list mb-5"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="movieDetails" tabindex="-1" role="dialog" aria-labelledby="movieDetailsLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg " role="document">
+        <div class="modal-content">
+          <div class="modal-header text-light">
+            <h5 class="modal-title" id="movieDetailsLabel">Movie Title</h5>
+            <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container py-5">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="https://instagram.com/andrewbenedictus" class="nav-link px-2 text-light" target="_blank">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.youtube.com/channel/UCserpGA6grVSHzfzz_oBL7A" class="nav-link px-2 text-light" target="_blank">YouTube</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://id.linkedin.com/in/andrewbjamesie" class="nav-link px-2 text-light" target="_blank">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/aNdr3W03" class="nav-link px-2 text-light" target="_blank">GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.hackerrank.com/andrewbjamesie" class="nav-link px-2 text-light" target="_blank">HackerRank</a>
+        </li>
+      </ul>
+      <p class="text-center text-light">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Andrew Benedictus Jamesie All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>
